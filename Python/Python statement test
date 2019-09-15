@@ -1,0 +1,40 @@
+st = 'Print only the words that start with s in this sentence'
+st_list=st.split()
+for items in st_list:
+    if items[0]=='s':
+        print(items)
+
+for x in range (0,11):
+    if x%2==0:
+        print(x)
+
+
+mylist=[x for x in range(0,51) if x%3==0]
+mylist
+
+
+st = 'Print every word in this sentence that has an even number of letters'
+mylist=st.split()
+
+for i in mylist:
+    if len(i)%2==0:
+        print(i)
+        
+        
+for i in range(0,101):
+    if (i%3==0) and (i%5==0):
+        print("Fizzbuzz")
+    elif (i%3==0):
+         print("Fizz")
+    elif (i%5==0):
+        print("Buzz")
+    else:
+        print(i)
+
+
+
+st = 'Create a list of the first letters of every word in this string'
+mylist=st.split()
+mylist
+finallist=[i[0] for i in mylist]
+finallist

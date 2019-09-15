@@ -1,0 +1,35 @@
+try:
+    for i in ['a','b','c']:
+        print(i**2)
+except:
+    print("code olunga eluthu")
+else:
+    for i in ['a','b','c']:
+        print(i*2)
+
+try:
+    x = 5
+    y = 1
+
+    z = x/y
+except:
+    print("change value of y")
+finally:
+    print("All done")
+
+
+
+def ask():
+    while True:  
+        try:
+            a=int(input("enter number:"))
+            result= a**2
+            
+        except:
+            print("provide number")
+            continue
+        else:
+            print(result)
+            break
+    
+ask()
